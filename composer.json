@@ -1,0 +1,30 @@
+{
+    "name": "poowf/laravel-luis",
+    "description": "A Laravel wrapper for Azure LUIS",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Zane J. Chua",
+            "email": "zane.jocelyn@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Poowf\\LaravelLuis\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Poowf\\LaravelLuis\\ServiceProvider"
+            ],
+            "aliases": {
+                "Luis": "Poowf\\LaravelLuis\\Facade"
+            }
+        }
+    }
+}
